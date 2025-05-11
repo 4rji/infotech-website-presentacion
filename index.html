@@ -727,30 +727,18 @@
                
 <!-- From Uiverse.io by Spacious74 --> 
 <div class="card-stack-bg"></div>
-<div class="card-stack">
-  <div class="card card1">
-    <div class="card-inner">
-      <div class="card-front" style="display: flex; align-items: center; justify-content: center; font-size: 1.35em; font-weight: bold; color: #0b68f5; letter-spacing: 1px;">Successes</div>
-      <div class="card-back">
-        <ul style="list-style-type: disc; color: #fff; text-align: left; font-size: 1em; padding-left: 1.4em; margin: 0;">
-          <li>AI-based threat detection prototype</li>
-          <li>Real-time response on low-cost hardware</li>
-          <li>Intuitive UI for monitoring & alerts</li>
-          <li>Maintained budget discipline</li>
-        </ul>
-      </div>
-    </div>
+<div style="display: flex; flex-direction: row; gap: 3em; width: 100%;">
+  <!-- Columna de tarjetas -->
+  <div class="card-stack" style="display: flex; flex-direction: column; gap: 2em; flex: 0 0 320px;">
+    <div class="card card1">Successes</div>
+    <div class="card card2">Challenges</div>
+    <div class="card card3">Improvements</div>
   </div>
-  <div class="card card2">
-    <div class="card-inner">
-      <div class="card-front"></div>
-      <div class="card-back">Achieved real-time response on low-cost hardware</div>
-    </div>
-  </div>
-  <div class="card card3">
-    <div class="card-inner">
-      <div class="card-front"></div>
-      <div class="card-back">Successfully integrated with tools like Suricata and Splunk</div>
+  
+  <!-- Columna de detalles -->
+  <div id="card-details" style="flex: 2; min-width: 420px; border-left: 2px solid #0b68f5; padding-left: 2.5em; display: flex; align-items: flex-start; justify-content: flex-start;">
+    <div style="color: #fff; font-size: 1.2em; opacity: 0.8; max-width: 700px; width: 100%;">
+      Select a card to view details
     </div>
   </div>
 </div>
