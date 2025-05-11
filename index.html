@@ -185,11 +185,103 @@
         <section id="two" class="main style2 left dark fullscreen" style="display: flex; align-items: center; justify-content: center; min-height: 100vh; background:  url('images/intro.png') center center / cover no-repeat; position: relative;">
             <div class="content box style2" style="text-align: center; max-width: 995px; margin: auto; background: rgba(20, 20, 30, 0.85); padding: 3.75em 2.5em 2.5em 2.5em; border-radius: 24px; box-shadow: 0 8px 32px rgba(0,0,0,0.45); line-height: 1.6;">
                 <header>
-                    <h2 style="font-size: 2.8em; font-weight: bold; margin-bottom: 0.5em; letter-spacing: 1px; color: #0b68f5; text-shadow: 0 2px 16px #064bdb, 0 1px 0 #222;">Problem Statement</h2>
+                    <h2 style="font-size: 2.8em; font-weight: bold; margin-bottom: 1em; letter-spacing: 1px; color: #0b68f5; text-shadow: 0 2px 16px #064bdb, 0 1px 0 #222;">Problem Statement</h2>
                 </header>
-                <p style="font-size: 1.5em; font-weight: 500; color: #ffffff; margin-bottom: 2em; text-shadow: 0 1px 8px #064bdb;">Traditional network security tools struggle to detect hidden threats like backdoors, especially in real time.</p>
-                <p style="font-size: 1.5em; font-weight: 500; color: #ffffff; margin-bottom: 2em; text-shadow: 0 1px 8px #064bdb;">Many organizations lack the resources or expertise to deploy complex, high-cost security systems.</p>
-                <p style="font-size: 1.5em; font-weight: 500; color: #ffffff; margin-bottom: 2em; text-shadow: 0 1px 8px #064bdb;">This project addresses that gap with an accessible, automated, and intelligent solution.</p>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5em; margin: 2em 0;">
+                    <!-- Card 1 -->
+                    <div style="background: rgba(11, 104, 245, 0.1); border-left: 4px solid #0b68f5; padding: 1.5em; border-radius: 8px; transition: transform 0.3s ease;">
+                        <h3 style="color: #0b68f5; margin-top: 0; font-size: 1.3em;">Stealthy Threats</h3>
+                        <p style="color: #ffffff; margin-bottom: 0;">Traditional tools miss backdoors</p>
+                    </div>
+                    
+                    <!-- Card 2 -->
+                    <div style="background: rgba(11, 104, 245, 0.1); border-left: 4px solid #0b68f5; padding: 1.5em; border-radius: 8px; transition: transform 0.3s ease;">
+                        <h3 style="color: #0b68f5; margin-top: 0; font-size: 1.3em;">Slow Detection</h3>
+                        <p style="color: #ffffff; margin-bottom: 0;">Legacy systems can't keep up in real-time</p>
+                    </div>
+                    
+                    <!-- Card 3 -->
+                    <div style="background: rgba(11, 104, 245, 0.1); border-left: 4px solid #0b68f5; padding: 1.5em; border-radius: 8px; transition: transform 0.3s ease;">
+                        <h3 style="color: #0b68f5; margin-top: 0; font-size: 1.3em;">High Costs</h3>
+                        <p style="color: #ffffff; margin-bottom: 0;">Advanced security breaks the bank</p>
+                    </div>
+                    
+                    <!-- Card 4 -->
+                    <div style="background: rgba(11, 104, 245, 0.1); border-left: 4px solid #0b68f5; padding: 1.5em; border-radius: 8px; transition: transform 0.3s ease;">
+                        <h3 style="color: #0b68f5; margin-top: 0; font-size: 1.3em;">Complexity</h3>
+                        <p style="color: #ffffff; margin-bottom: 0;">Hard to deploy and maintain</p>
+                    </div>
+                </div>
+                
+                <div style="
+                    background: linear-gradient(145deg, rgba(11, 104, 245, 0.2), rgba(11, 104, 245, 0.1));
+                    padding: 1.8em 2em;
+                    border-radius: 12px;
+                    margin-top: 2em;
+                    border: 1px solid rgba(11, 104, 245, 0.4);
+                    box-shadow: 0 0 15px rgba(11, 104, 245, 0.2), 0 0 30px rgba(11, 104, 245, 0.1);
+                    position: relative;
+                    overflow: hidden;
+                    animation: pulse 4s infinite alternate;
+                ">
+                    <!-- Brillo sutil en las esquinas -->
+                    <div style="
+                        position: absolute;
+                        top: -50%;
+                        right: -50%;
+                        width: 100%;
+                        height: 200%;
+                        background: radial-gradient(circle, rgba(11, 104, 245, 0.2) 0%, rgba(11, 104, 245, 0) 70%);
+                        opacity: 0.5;
+                        pointer-events: none;
+                        transform: rotate(15deg);
+                    "></div>
+                    
+                    <h3 style="
+                        color: #4da0ff;
+                        margin-top: 0;
+                        font-size: 1.7em;
+                        margin-bottom: 0.7em;
+                        position: relative;
+                        text-shadow: 0 0 10px rgba(77, 160, 255, 0.5);
+                    ">Our Solution</h3>
+                    
+                    <p style="
+                        color: #ffffff;
+                        margin-bottom: 0;
+                        font-size: 1.2em;
+                        line-height: 1.5;
+                        position: relative;
+                        font-weight: 400;
+                    ">An open-source, AI-powered security solution that's powerful yet simple to use</p>
+                    
+                    <!-- Efecto de partículas sutiles -->
+                    <div style="
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-image: 
+                            radial-gradient(circle at 20% 30%, rgba(255,255,255,0.1) 1px, transparent 1px),
+                            radial-gradient(circle at 80% 70%, rgba(255,255,255,0.1) 1px, transparent 1px);
+                        background-size: 100px 100px;
+                        opacity: 0.3;
+                        pointer-events: none;
+                    "></div>
+                </div>
+                
+                <style>
+                    @keyframes pulse {
+                        0% {
+                            box-shadow: 0 0 15px rgba(11, 104, 245, 0.2), 0 0 30px rgba(11, 104, 245, 0.1);
+                        }
+                        100% {
+                            box-shadow: 0 0 20px rgba(11, 104, 245, 0.3), 0 0 40px rgba(11, 104, 245, 0.2);
+                        }
+                    }
+                </style>
             </div>
             <a href="#three" class="scrolldown custom-scroll" aria-label="Siguiente sección">
                 <div class="chevrons">
@@ -198,6 +290,13 @@
                 </div>
             </a>
         </section>
+
+
+
+
+
+
+
 
 
 
@@ -230,8 +329,21 @@
         </section>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
         <!-- Scope -->
-        <section id="scope" class="main style2 left dark fullscreen" style="display: flex; align-items: center; justify-content: center; min-height: 100vh; background: #000000 center center / cover no-repeat; position: relative;">
+        <section id="scope" class="main style2 left dark fullscreen" style="display: flex; align-items: center; justify-content: center; min-height: 100vh; background: url('images/intro.png') center center / cover no-repeat; position: relative;">
             <div class="content box style2" style="text-align: center; max-width: 1100px; margin: auto; background: rgba(20, 20, 30, 0.85); padding: 3.75em 2.5em 2.5em 2.5em; border-radius: 24px; box-shadow: 0 8px 32px rgba(0,0,0,0.45); line-height: 1.6;">
                 <header>
                     <h2 style="font-size: 2.8em; font-weight: bold; margin-bottom: 0.8em; letter-spacing: 1px; color: #0b68f5; text-shadow: 0 2px 16px #064bdb, 0 1px 0 #222;">Scope</h2>
@@ -265,6 +377,19 @@
                 </div>
             </a>
         </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         <!-- Four -->
