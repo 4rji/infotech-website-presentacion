@@ -1,10 +1,11 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>The Round House</title>
+        <title>PenkitPro</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="animations/botones-deslizar.css" />
         <link rel="preload" href="http://64.23.247.62/sss.png" as="image">
         <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
         <style>
@@ -78,7 +79,14 @@
                 </header>
                 <p>Content</p>
                 <footer>
-                    <a href="#one" class="button style22 down">More</a>
+                    <a href="#one" id="scrolldown-intro" class="scrolldown-link">
+                        <div class="scrolldown">
+                            <div class="chevrons">
+                                <div class="chevrondown"></div>
+                                <div class="chevrondown"></div>
+                            </div>
+                        </div>
+                    </a>
                 </footer>
             </div>
         </section>
@@ -91,7 +99,14 @@
                 </header>
                 <p>Content</p>
             </div>
-            <a href="#two" class="button style22 down anchored">Next</a>
+            <a href="#two" id="scrolldown-one" class="scrolldown-link anchored">
+                <div class="scrolldown">
+                    <div class="chevrons">
+                        <div class="chevrondown"></div>
+                        <div class="chevrondown"></div>
+                    </div>
+                </div>
+            </a>
         </section>
 
         <!-- Two -->
@@ -102,7 +117,14 @@
                 </header>
                 <p>Content</p>
             </div>
-            <a href="#three" class="button style22 down anchored">Next</a>
+            <a href="#three" id="scrolldown-two" class="scrolldown-link anchored">
+                <div class="scrolldown">
+                    <div class="chevrons">
+                        <div class="chevrondown"></div>
+                        <div class="chevrondown"></div>
+                    </div>
+                </div>
+            </a>
         </section>
 
         <!-- Three -->
@@ -113,7 +135,14 @@
                 </header>
                 <p>Content</p>
             </div>
-            <a href="#four" class="button style22 down anchored">Next</a>
+            <a href="#four" id="scrolldown-three" class="scrolldown-link anchored">
+                <div class="scrolldown">
+                    <div class="chevrons">
+                        <div class="chevrondown"></div>
+                        <div class="chevrondown"></div>
+                    </div>
+                </div>
+            </a>
         </section>
 
         <!-- Four -->
@@ -124,7 +153,14 @@
                 </header>
                 <p>Content</p>
             </div>
-            <a href="#five" class="button style22 down anchored">Next</a>
+            <a href="#five" id="scrolldown-four" class="scrolldown-link anchored">
+                <div class="scrolldown">
+                    <div class="chevrons">
+                        <div class="chevrondown"></div>
+                        <div class="chevrondown"></div>
+                    </div>
+                </div>
+            </a>
         </section>
 
         <!-- Five -->
@@ -135,7 +171,14 @@
                 </header>
                 <p>Content</p>
             </div>
-            <a href="#six" class="button style22 down anchored">Next</a>
+            <a href="#six" id="scrolldown-five" class="scrolldown-link anchored">
+                <div class="scrolldown">
+                    <div class="chevrons">
+                        <div class="chevrondown"></div>
+                        <div class="chevrondown"></div>
+                    </div>
+                </div>
+            </a>
         </section>
 
         <!-- Six -->
@@ -146,7 +189,14 @@
                 </header>
                 <p>Content</p>
             </div>
-            <a href="#seven" class="button style22 down anchored">Next</a>
+            <a href="#seven" id="scrolldown-six" class="scrolldown-link anchored">
+                <div class="scrolldown">
+                    <div class="chevrons">
+                        <div class="chevrondown"></div>
+                        <div class="chevrondown"></div>
+                    </div>
+                </div>
+            </a>
         </section>
 
         <!-- Seven -->
@@ -157,7 +207,14 @@
                 </header>
                 <p>Content</p>
             </div>
-            <a href="#eight" class="button style22 down anchored">Next</a>
+            <a href="#eight" id="scrolldown-seven" class="scrolldown-link anchored">
+                <div class="scrolldown">
+                    <div class="chevrons">
+                        <div class="chevrondown"></div>
+                        <div class="chevrondown"></div>
+                    </div>
+                </div>
+            </a>
         </section>
 
         <!-- Eight -->
@@ -168,7 +225,14 @@
                 </header>
                 <p>Content</p>
             </div>
-            <a href="#nine" class="button style22 down anchored">Next</a>
+            <a href="#nine" id="scrolldown-eight" class="scrolldown-link anchored">
+                <div class="scrolldown">
+                    <div class="chevrons">
+                        <div class="chevrondown"></div>
+                        <div class="chevrondown"></div>
+                    </div>
+                </div>
+            </a>
         </section>
 
         <!-- Nine -->
@@ -179,7 +243,14 @@
                 </header>
                 <p>Content</p>
             </div>
-            <a href="#ten" class="button style22 down anchored">Next</a>
+            <a href="#ten" id="scrolldown-nine" class="scrolldown-link anchored">
+                <div class="scrolldown">
+                    <div class="chevrons">
+                        <div class="chevrondown"></div>
+                        <div class="chevrondown"></div>
+                    </div>
+                </div>
+            </a>
         </section>
 
         <!-- Ten -->
@@ -190,7 +261,14 @@
                 </header>
                 <p>Content</p>
             </div>
-            <a href="#footer" class="button style22 down anchored">Next</a>
+            <a href="#footer" id="scrolldown-ten" class="scrolldown-link anchored">
+                <div class="scrolldown">
+                    <div class="chevrons">
+                        <div class="chevrondown"></div>
+                        <div class="chevrondown"></div>
+                    </div>
+                </div>
+            </a>
         </section>
 
         <!-- Footer -->
@@ -250,6 +328,18 @@
                     event.preventDefault(); // Prevent default scrolling
                     sections[currentIndex - 1].scrollIntoView({ behavior: 'smooth' });
                 }
+            });
+        </script>
+
+        <!-- Hacer la flecha scrolldown más transparente después de 3 segundos -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(function() {
+                    document.querySelectorAll('.scrolldown').forEach(function(el) {
+                        el.style.opacity = '0.35';
+                        el.style.transition = 'opacity 0.7s';
+                    });
+                }, 3000);
             });
         </script>
 
