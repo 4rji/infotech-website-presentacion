@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="animations/botones-deslizar.css" />
         <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
         <link rel="stylesheet" href="assets/css/cards.css" />
+        <link rel="stylesheet" href="assets/css/intro-efect.css" />
         <style>
             #header {
                 background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
@@ -45,7 +46,7 @@
             }
         </style>
     </head>
-    <body class="is-preload">
+    <body class="is-loaded">
 
         
 
@@ -75,29 +76,77 @@
         </header>
 
         <!-- Intro -->
-        <section id="intro" class="main style1 dark fullscreen" style="display: flex; align-items: center; justify-content: center; min-height: 100vh; background: url('images/intro.png') center center / cover no-repeat; position: relative;">
+        <section id="intro" class="main style1 dark fullscreen" style="display: flex; align-items: center; justify-content: center; min-height: 100vh; background: url('images/intro.png') center center / cover no-repeat; position: relative; overflow: hidden;">
+            <!-- Fondo oscuro -->
             <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.7); z-index: 1;"></div>
-            <div class="content" style="position: relative; z-index: 2; text-align: center; max-width: 995px; margin: auto; background: rgba(20, 20, 30, 0.85); padding: 3.75em 2.5em 2.5em 2.5em; border-radius: 24px; box-shadow: 0 8px 32px rgba(0,0,0,0.45); line-height: 1.6;">
-                <header>
-                    <h1 style="font-size: 2.8em; font-weight: bold; margin-bottom: 0.5em; letter-spacing: 1px; color: rgb(43, 66, 161); text-shadow: 0 2px 16px #00f8, 0 1px 0 #222;"> AI-Driven Backdoor Detection System</h1>
-                    <h3 style="font-size: 1.5em; font-weight: 500; color: #fff; margin-bottom: 2em; text-shadow: 0 1px 8px #00f8;">Real-Time Threat Detection for Modern Networks</h3>
-                </header>
-                <hr style="border: none; border-top: 2px solid #0ff; width: 60px; margin: 2.5em auto; opacity: 0.7;" />
-                <div style="margin-bottom: 2.5em;">
-                    <h4 style="font-size: 1.2em; color: #fff; margin-bottom: 0.8em;"> By:</h4>
-                    <span style="font-size: 1.3em; font-weight: bold; color: rgb(84, 18, 182); display: block; margin-bottom: 0.5em;">Havi</span>
-                    <span style="color: #fff; display: block; margin-bottom: 0.5em;">Lead Security Engineer</span>
-                    <span style="color: #aaa; display: block;">2025 Capstone Project</span>
-                </div>
-                <footer>
-                    <a href="#one" class="scrolldown custom-scroll" aria-label="Siguiente sección">
-                        <div class="chevrons">
-                            <div class="chevrondown"></div>
-                            <div class="chevrondown"></div>
+            
+            <!-- Tarjeta que se eleva -->
+            <div class="card-container" style="position: relative; z-index: 2; perspective: 1000px; width: 100%; max-width: 1050px;">
+                <div class="card-outer" style="transform-style: preserve-3d; transform: translateY(100vh) rotateX(10deg); opacity: 0; animation: cardRise 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards 0.5s;">
+                    <div class="content" style="text-align: center; background: rgba(20, 20, 30, 0.85); padding: 3.75em 2.5em 2.5em 2.5em; border-radius: 24px; box-shadow: 0 8px 32px rgba(0,0,0,0.45); line-height: 1.6; opacity: 0; transform: translateZ(0); animation: fadeIn 0.5s ease-out forwards 1.5s;">
+                        <header>
+                            <h1 style="font-size: 2.8em; font-weight: bold; margin-bottom: 0.5em; letter-spacing: 1px; color: rgb(43, 66, 161); text-shadow: 0 2px 16px #00f8, 0 1px 0 #222;">AI-Driven Backdoor Detection System</h1>
+                            <h3 style="font-size: 1.5em; font-weight: 500; color: #fff; margin-bottom: 2em; text-shadow: 0 1px 8px #00f8;">Real-Time Threat Detection for Modern Networks</h3>
+                        </header>
+                        <hr style="border: none; border-top: 2px solid #0ff; width: 60px; margin: 2.5em auto; opacity: 0.7;" />
+                        <div style="margin-bottom: 2.5em;">
+                            <h4 style="font-size: 1.2em; color: #fff; margin-bottom: 0.8em;">By:</h4>
+                            <span style="font-size: 1.3em; font-weight: bold; color: rgb(84, 18, 182); display: block; margin-bottom: 0.5em;">Havi</span>
+                            <span style="color: #fff; display: block; margin-bottom: 0.5em;">Lead Security Engineer</span>
+                            <span style="color: #aaa; display: block;">2025 Capstone Project</span>
                         </div>
-                    </a>
-                </footer>
+                        <footer>
+                            <a href="#one" class="scrolldown custom-scroll" aria-label="Siguiente sección">
+                                <div class="chevrons">
+                                    <div class="chevrondown"></div>
+                                    <div class="chevrondown"></div>
+                                </div>
+                            </a>
+                        </footer>
+                    </div>
+                </div>
             </div>
+            
+            <style>
+                /* Asegurarse de que las animaciones funcionen */
+                body.loaded *, body.loaded *:before, body.loaded *:after {
+                    animation-play-state: running !important;
+                    transition: all 0.3s ease !important;
+                }
+                
+                @keyframes cardRise {
+                    0% {
+                        transform: translateY(100vh) rotateX(10deg);
+                        opacity: 0;
+                    }
+                    100% {
+                        transform: translateY(0) rotateX(0);
+                        opacity: 1;
+                    }
+                }
+                
+                @keyframes fadeIn {
+                    from {
+                        opacity: 0;
+                    }
+                    to {
+                        opacity: 1;
+                    }
+                }
+                
+                /* Asegurar que el contenido sea visible después de la animación */
+                .content {
+                    will-change: opacity, transform;
+                    backface-visibility: hidden;
+                }
+            </style>
+            
+            <script>
+                // Forzar la clase loaded después de que todo se haya cargado
+                window.addEventListener('load', function() {
+                    document.body.className = 'loaded';
+                });
+            </script>
         </section>
 
         <!-- One -->
