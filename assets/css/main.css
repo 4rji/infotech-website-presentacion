@@ -2385,3 +2385,21 @@ input, select, textarea {
 			}
 
 		}
+
+/* Flecha de scroll fija en la parte derecha, casi abajo, dentro de cada sección */
+section {
+    position: relative;
+}
+
+.scrolldown.custom-scroll {
+    position: absolute;
+    right: 2.5vw;
+    bottom: 4vh;
+    z-index: 10;
+    opacity: 1;
+    transition: opacity 0.5s;
+    /* Opcional: hacerla más pequeña y discreta */
+    --sizeX: 28px;
+    --sizeY: 44px;
+    filter: drop-shadow(0 2px 8px rgba(0,0,0,0.15));
+}
