@@ -277,17 +277,53 @@
 
         <!-- Custom Script for Arrow Navigation -->
         <script>
-            // Opacidad de la flecha después de 3 segundos y restaurar al interactuar
-            document.querySelectorAll('.custom-scroll').forEach(btn => {
-                setTimeout(() => {
+            // Función para mostrar la flecha de la sección visible
+            function showArrowForCurrentSection() {
+                // Oculta todas las flechas
+                document.querySelectorAll('.custom-scroll').forEach(btn => {
                     btn.style.opacity = '0.3';
-                }, 3000);
+                });
+                // Busca la sección visible en viewport
+                const sections = document.querySelectorAll('section');
+                let found = false;
+                for (let i = 0; i < sections.length; i++) {
+                    const rect = sections[i].getBoundingClientRect();
+                    if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+                        const arrow = sections[i].querySelector('.custom-scroll');
+                        if (arrow) {
+                            arrow.style.opacity = '1';
+                            arrow.classList.add('arrow-highlight');
+                            setTimeout(() => {
+                                arrow.style.opacity = '0.3';
+                                arrow.classList.remove('arrow-highlight');
+                            }, 3000);
+                        }
+                        found = true;
+                        break;
+                    }
+                }
+            }
+
+            // Inicializa listeners para mouse y scroll
+            document.querySelectorAll('.custom-scroll').forEach(btn => {
                 btn.addEventListener('mouseenter', () => {
                     btn.style.opacity = '1';
                 });
                 btn.addEventListener('mouseleave', () => {
                     btn.style.opacity = '0.3';
                 });
+            });
+
+            // Detecta cambios de sección por scroll o hashchange
+            window.addEventListener('scroll', () => {
+                showArrowForCurrentSection();
+            });
+            window.addEventListener('hashchange', () => {
+                setTimeout(showArrowForCurrentSection, 100); // Espera a que navegue
+            });
+            // Al cargar la página
+            window.addEventListener('DOMContentLoaded', () => {
+                showArrowForCurrentSection();
             });
         </script>
 
