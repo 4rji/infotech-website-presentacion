@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="assets/css/main.css" />
         <link rel="stylesheet" href="animations/botones-deslizar.css" />
         <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <link rel="stylesheet" href="assets/css/cards.css" />
         <style>
             #header {
                 background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
@@ -66,8 +67,8 @@
                     <li><a href="#seven">Resources</a></li>
                     <li><a href="#eight">Risk</a></li>
                     <li><a href="#nine">Stakeholder</a></li>
-                    <li><a href="#ten">Tech Stack</a></li>
-                    <li><a href="#eleven">Roadmap</a></li>
+                    <li><a href="#ten">Reflection</a></li>
+                    <li><a href="#eleven">Successes</a></li>
                     <li><a href="#twelve">Team</a></li>
                 </ul>
             </nav>
@@ -679,9 +680,81 @@
         <section id="ten" class="main style2 left dark fullscreen" style="display: flex; align-items: center; justify-content: center; min-height: 100vh; background: url('images/intro.png') center center / cover no-repeat; position: relative;">
             <div class="content box style2" style="text-align: center; max-width: 995px; margin: auto; background: rgba(20, 20, 30, 0.85); padding: 3.75em 2.5em 2.5em 2.5em; border-radius: 24px; box-shadow: 0 8px 32px rgba(0,0,0,0.45); line-height: 1.6;">
                 <header>
-                    <h2>Title</h2>
+                    <h2 style="font-size: 2.8em; font-weight: bold; margin-bottom: 0.8em; letter-spacing: 1px; color: #0b68f5; text-shadow: 0 2px 16px #064bdb, 0 1px 0 #222;">Reflection & Lessons Learned</h2>
                 </header>
-                <p>Content</p>
+                <ul style="list-style-type: disc; color: #fff; font-size: 1.25em; line-height: 1.8; max-width: 720px; margin: 2em auto 0 auto; text-align: left; padding-left: 2em;">
+                    <li>Planning with a clear WBS helped maintain focus and scope</li>
+                    <li>Early definition of milestones supported agile delivery</li>
+                    <li>Integration testing was more complex than expected</li>
+                    <li>Open-source tools proved reliable and cost-effective</li>
+                    <li>Team communication was key to resolving unexpected blockers</li>
+                </ul>
+            </div>
+            <a href="#footer" class="scrolldown custom-scroll" aria-label="Siguiente sección">
+                <div class="chevrons">
+                    <div class="chevrondown"></div>
+                    <div class="chevrondown"></div>
+                </div>
+            </a>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Eleven -->
+        <section id="eleven" class="main style2 right dark fullscreen" style="display: flex; align-items: center; justify-content: center; min-height: 100vh; background: url('images/intro.png') center center / cover no-repeat; position: relative;">
+            <div class="content box style2" style="text-align: center; max-width: 995px; margin: auto; background: none; padding: 3.75em 2.5em 2.5em 2.5em; border-radius: 24px; box-shadow: none; line-height: 1.6;">
+               
+<!-- From Uiverse.io by Spacious74 --> 
+<div class="card-stack-bg"></div>
+<div class="card-stack">
+  <div class="card card1">
+    <div class="card-inner">
+      <div class="card-front" style="display: flex; align-items: center; justify-content: center; font-size: 1.35em; font-weight: bold; color: #0b68f5; letter-spacing: 1px;">Successes</div>
+      <div class="card-back">
+        <ul style="list-style-type: disc; color: #fff; text-align: left; font-size: 1em; padding-left: 1.4em; margin: 0;">
+          <li>AI-based threat detection prototype</li>
+          <li>Real-time response on low-cost hardware</li>
+          <li>Intuitive UI for monitoring & alerts</li>
+          <li>Maintained budget discipline</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="card card2">
+    <div class="card-inner">
+      <div class="card-front"></div>
+      <div class="card-back">Achieved real-time response on low-cost hardware</div>
+    </div>
+  </div>
+  <div class="card card3">
+    <div class="card-inner">
+      <div class="card-front"></div>
+      <div class="card-back">Successfully integrated with tools like Suricata and Splunk</div>
+    </div>
+  </div>
+</div>
+  
             </div>
             <a href="#footer" class="scrolldown custom-scroll" aria-label="Siguiente sección">
                 <div class="chevrons">
@@ -693,14 +766,7 @@
 
         <!-- Footer -->
         <footer id="footer">
-            <!-- Icons -->
-            <ul class="icons">
-                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                <li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
-            </ul>
-
+       
             <!-- Menu -->
             <ul class="menu">
                 <li>&copy; Design by: <a href="#">web4rji</a></li>
@@ -716,6 +782,30 @@
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/cards.js"></script>
+        <script>
+        // Mostrar fondo oscuro cuando una tarjeta esté girada
+        document.addEventListener('DOMContentLoaded', function () {
+          const stack = document.querySelector('.card-stack');
+          const bg = document.querySelector('.card-stack-bg');
+          if (!stack || !bg) return;
+          stack.addEventListener('click', function () {
+            setTimeout(function () {
+              const flipped = stack.querySelector('.card.flipped');
+              if (flipped) {
+                bg.classList.add('show-bg');
+              } else {
+                bg.classList.remove('show-bg');
+              }
+            }, 20);
+          });
+          // Cierra el fondo si se hace click en el fondo
+          bg.addEventListener('click', function () {
+            stack.querySelectorAll('.card.flipped').forEach(c => c.classList.remove('flipped'));
+            bg.classList.remove('show-bg');
+          });
+        });
+        </script>
 
         <!-- Custom Script for Arrow Navigation -->
         <script>
