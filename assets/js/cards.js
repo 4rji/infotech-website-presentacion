@@ -88,7 +88,6 @@ document.addEventListener('DOMContentLoaded', function () {
       cards.forEach(c => c.classList.remove('active'));
       details.innerHTML = `
         <div style="color: #fff; font-size: 1.2em; opacity: 0.8;">
-          Select a card to view details
         </div>
       `;
     }
