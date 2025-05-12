@@ -1291,7 +1291,7 @@
             function showArrowForCurrentSection() {
                 // Oculta todas las flechas
                 document.querySelectorAll('.custom-scroll').forEach(btn => {
-                    btn.style.opacity = '0.3';
+                    btn.style.opacity = '0';
                 });
                 // Busca la sección visible en viewport
                 const sections = document.querySelectorAll('section');
@@ -1304,7 +1304,7 @@
                             arrow.style.opacity = '1';
                             arrow.classList.add('arrow-highlight');
                             setTimeout(() => {
-                                arrow.style.opacity = '0.3';
+                                arrow.style.opacity = '0';
                                 arrow.classList.remove('arrow-highlight');
                             }, 3000);
                         }
@@ -1320,7 +1320,7 @@
                     btn.style.opacity = '1';
                 });
                 btn.addEventListener('mouseleave', () => {
-                    btn.style.opacity = '0.3';
+                    btn.style.opacity = '0';
                 });
             });
 
