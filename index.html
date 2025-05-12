@@ -816,7 +816,7 @@
 
 
         <!-- Seven -->
-        <section id="seven" class="main style2 right dark fullscreen" style="display: flex; flex-direction: column; justify-content: flex-start; min-height: 100vh; background: #000000 center center / cover no-repeat; position: relative; padding: 2em 0;">
+        <section id="seven" class="main style2 right dark fullscreen" style="display: flex; flex-direction: column; justify-content: flex-start; min-height: 100vh; background: url('images/intro.png') center center / cover no-repeat; position: relative; padding: 2em 0;">
             <!-- Main Box -->
             <div class="content box style2" style="text-align: center; width: 40%; max-width: 800px; margin: 1em auto; background: rgba(20, 20, 30, 0.85); padding: 1.5em; border-radius: 16px; box-shadow: 0 6px 20px rgba(0,0,0,0.3); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.05); position: relative; overflow: hidden; z-index: 1;">
                 <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #0b68f5, #00ff95);"></div>
@@ -883,6 +883,9 @@
                 </div>
             </a>
         </section>
+
+
+
 
 
         <!-- Eight -->
@@ -1016,44 +1019,128 @@
             </a>
         </section>
 
+
+
+
+
+
+
         <!-- Nine -->
         <section id="nine" class="main style2 right dark fullscreen" style="display: flex; align-items: center; justify-content: center; min-height: 100vh; background: url('images/intro.png') center center / cover no-repeat; position: relative;">
             <div class="content box style2" style="text-align: center; width: 90%; max-width: 1400px; margin: auto; background: rgba(20, 20, 30, 0.85); padding: 4em; border-radius: 24px; box-shadow: 0 8px 32px rgba(0,0,0,0.45); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.05); position: relative; overflow: hidden; z-index: 1;">
                 <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #0b68f5, #00ff95);"></div>
                 <header>
-                    <h2 style="font-size: 2.8em; font-weight: bold; margin-bottom: 0.8em; letter-spacing: 1px; color: #0b68f5; text-shadow: 0 2px 16px #064bdb, 0 1px 0 #222;">Stakeholder Analysis</h2>
+                    <h2 style="font-size: 2.8em; font-weight: bold; margin-bottom: 1em; letter-spacing: 1px; color: #0b68f5; text-shadow: 0 2px 16px #064bdb, 0 1px 0 #222;">Stakeholder Analysis</h2>
+                    <p style="color: #a0a0c0; font-size: 1.1em; max-width: 800px; margin: 0 auto 2.5em;">Key stakeholders and their engagement strategies for successful project implementation</p>
                 </header>
-                <div style="overflow-x:auto; margin-top:2.5em;">
-                    <table style="width:100%; max-width:1100px; margin:auto; border-collapse:separate; border-spacing:0; background:rgba(20, 20, 30, 0.8); border-radius: 20px; box-shadow: 0 4px 16px rgba(0,0,0,0.3);">
-                        <thead>
-                            <tr style="background:rgba(11,104,245,0.12);">
-                                <th style="width:50%; padding:1.5em 1em; color:#0b68f5; font-size:1.4em; text-align:left; border-top-left-radius:20px;">Primary Stakeholders</th>
-                                <th style="width:50%; padding:1.5em 1em; color:#0b68f5; font-size:1.4em; text-align:left; border-top-right-radius:20px;">Engagement Strategy</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td style="padding:1.5em 1em; color:#fff; font-size:1.1em; vertical-align:top; border-bottom-left-radius:20px;">
-                                    <ul style="margin:0; padding-left:1.2em; list-style-type: disc;">
-                                        <li>Havi Arji – Project Lead</li>
-                                        <li>S-STEM – Sponsor</li>
-                                        <li>SOC Analysts / IT Admins – End Users</li>
-                                        <li>Enterprise Clients – Target Customers</li>
-                                    </ul>
-                                </td>
-                                <td style="padding:1.5em 1em; color:#fff; font-size:1.1em; vertical-align:top; border-bottom-right-radius:20px;">
-                                    <ul style="margin:0; padding-left:1.2em; list-style-type: disc;">
-                                        <li>Manage Closely: Havi Arji, S-STEM, Clients</li>
-                                        <li>Keep Satisfied: CISOs, Compliance Officers</li>
-                                        <li>Keep Informed: SOC teams, IT staff</li>
-                                        <li>Monitor: Vendors, Universities, Open-source Community</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
                 
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5em; max-width: 1200px; margin: 0 auto;">
+                    <!-- Stakeholders Column -->
+                    <div style="background: linear-gradient(145deg, rgba(20, 20, 40, 0.8), rgba(15, 15, 35, 0.8)); padding: 2.5em; border-radius: 18px; border-left: 4px solid #0b68f5; box-shadow: 0 8px 24px rgba(0,0,0,0.3);">
+                        <div style="display: flex; align-items: center; margin-bottom: 1.5em; padding-bottom: 1em; border-bottom: 1px solid rgba(11, 104, 245, 0.3);">
+                            <div style="background: rgba(11, 104, 245, 0.2); width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-right: 15px;">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" stroke="#0b68f5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M20.59 22C20.59 18.13 16.74 15 12 15C7.26 15 3.41 18.13 3.41 22" stroke="#0b68f5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h3 style="color: #0b68f5; font-size: 1.5em; margin: 0; text-shadow: 0 2px 8px rgba(11, 104, 245, 0.3);">Primary Stakeholders</h3>
+                        </div>
+                        
+                        <ul style="list-style: none; padding: 0; margin: 0;">
+                            <li style="display: flex; align-items: flex-start; margin-bottom: 1.5em; padding-bottom: 1.5em; border-bottom: 1px solid rgba(255,255,255,0.05);">
+                                <div style="background: rgba(11, 104, 245, 0.1); width: 36px; height: 36px; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0;">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#0b68f5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M9.09 9.00001C9.3251 8.33167 9.78915 7.76811 10.4 7.40914C11.0108 7.05016 11.7289 6.91894 12.4272 7.03872C13.1255 7.15849 13.7588 7.52153 14.2151 8.06353C14.6713 8.60554 14.9211 9.29153 14.92 10C14.92 12 11.92 13 11.92 13" stroke="#0b68f5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12 17H12.01" stroke="#0b68f5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 style="color: #fff; margin: 0 0 0.3em 0; font-size: 1.1em;">Havi Arji</h4>
+                                    <p style="color: #a0a0c0; margin: 0; font-size: 0.95em;">Project Lead</p>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start; margin-bottom: 1.5em; padding-bottom: 1.5em; border-bottom: 1px solid rgba(255,255,255,0.05);">
+                                <div style="background: rgba(11, 104, 245, 0.1); width: 36px; height: 36px; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0;">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22 12H18L15 21L9 3L6 12H2" stroke="#0b68f5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 style="color: #fff; margin: 0 0 0.3em 0; font-size: 1.1em;">S-STEM</h4>
+                                    <p style="color: #a0a0c0; margin: 0; font-size: 0.95em;">Sponsor</p>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start; margin-bottom: 1.5em;">
+                                <div style="background: rgba(11, 104, 245, 0.1); width: 36px; height: 36px; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0;">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="#0b68f5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="#0b68f5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13" stroke="#0b68f5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M16 3.13C16.8604 4.2985 17.315 5.76084 17.285 7.24C17.255 8.71916 16.7518 10.1638 15.85 11.3" stroke="#0b68f5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 style="color: #fff; margin: 0 0 0.3em 0; font-size: 1.1em;">SOC Analysts / IT Admins</h4>
+                                    <p style="color: #a0a0c0; margin: 0; font-size: 0.95em;">End Users</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Engagement Strategy Column -->
+                    <div style="background: linear-gradient(145deg, rgba(20, 20, 40, 0.8), rgba(15, 15, 35, 0.8)); padding: 2.5em; border-radius: 18px; border-left: 4px solid #00ff95; box-shadow: 0 8px 24px rgba(0,0,0,0.3);">
+                        <div style="display: flex; align-items: center; margin-bottom: 1.5em; padding-bottom: 1em; border-bottom: 1px solid rgba(0, 255, 149, 0.3);">
+                            <div style="background: rgba(0, 255, 149, 0.1); width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-right: 15px;">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24015C11.8996 1.76493 14.1003 1.98232 16.07 2.85999" stroke="#00ff95" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M22 4L12 14.01L9 11.01" stroke="#00ff95" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h3 style="color: #00ff95; font-size: 1.5em; margin: 0; text-shadow: 0 2px 8px rgba(0, 255, 149, 0.3);">Engagement Strategy</h3>
+                        </div>
+                        
+                        <ul style="list-style: none; padding: 0; margin: 0;">
+                            <li style="display: flex; align-items: flex-start; margin-bottom: 1.5em; padding-bottom: 1.5em; border-bottom: 1px solid rgba(255,255,255,0.05);">
+                                <div style="background: rgba(0, 255, 149, 0.1); width: 36px; height: 36px; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0;">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#00ff95" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12 8V12" stroke="#00ff95" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12 16H12.01" stroke="#00ff95" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 style="color: #fff; margin: 0 0 0.3em 0; font-size: 1.1em;">Manage Closely</h4>
+                                    <p style="color: #a0a0c0; margin: 0; font-size: 0.95em;">Havi Arji, S-STEM, Clients</p>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start; margin-bottom: 1.5em; padding-bottom: 1.5em; border-bottom: 1px solid rgba(255,255,255,0.05);">
+                                <div style="background: rgba(0, 255, 149, 0.1); width: 36px; height: 36px; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0;">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#00ff95" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M9.09 9.00001C9.3251 8.33167 9.78915 7.76811 10.4 7.40914C11.0108 7.05016 11.7289 6.91894 12.4272 7.03872C13.1255 7.15849 13.7588 7.52153 14.2151 8.06353C14.6713 8.60554 14.9211 9.29153 14.92 10C14.92 12 11.92 13 11.92 13" stroke="#00ff95" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 style="color: #fff; margin: 0 0 0.3em 0; font-size: 1.1em;">Keep Satisfied</h4>
+                                    <p style="color: #a0a0c0; margin: 0; font-size: 0.95em;">CISOs, Compliance Officers</p>
+                                </div>
+                            </li>
+                            <li style="display: flex; align-items: flex-start;">
+                                <div style="background: rgba(0, 255, 149, 0.1); width: 36px; height: 36px; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0;">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23 3.00005C22.0424 3.67552 20.9821 4.19216 19.86 4.53005C19.2577 3.83756 18.4573 3.34674 17.567 3.12397C16.6767 2.90121 15.7395 2.95724 14.8821 3.2845C14.0247 3.61176 13.2884 4.19445 12.773 4.95376C12.2575 5.71308 11.9877 6.61238 12 7.53005V8.53005C10.2426 8.57561 8.50127 8.18586 6.93101 7.39549C5.36074 6.60513 4.01032 5.43868 3 4.00005C3 4.00005 -1 13 8 17C5.94053 18.398 3.48716 19.099 1 19C10 24 21 19 21 7.50005C20.9991 7.2215 20.9723 6.94362 20.92 6.67005C21.9406 5.66354 22.6608 4.39276 23 3.00005V3.00005Z" stroke="#00ff95" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 style="color: #fff; margin: 0 0 0.3em 0; font-size: 1.1em;">Keep Informed</h4>
+                                    <p style="color: #a0a0c0; margin: 0; font-size: 0.95em;">SOC teams, IT staff, Vendors, Universities, Open-source Community</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <a href="#ten" class="scrolldown custom-scroll" aria-label="Siguiente sección">
                 <div class="chevrons">
@@ -1063,8 +1150,14 @@
             </a>
         </section>
 
+
+
+
+
+
+
         <!-- Ten -->
-        <section id="ten" class="main style2 left dark fullscreen" style="display: flex; align-items: center; justify-content: center; min-height: 100vh; background: url('images/intro.png') center center / cover no-repeat; position: relative;">
+        <section id="ten" class="main style2 left dark fullscreen" style="display: flex; align-items: center; justify-content: center; min-height: 100vh; background: #000   center center / cover no-repeat; position: relative;">
             <div class="content box style2" style="text-align: center; width: 90%; max-width: 1400px; margin: auto; background: rgba(20, 20, 30, 0.85); padding: 4em; border-radius: 24px; box-shadow: 0 8px 32px rgba(0,0,0,0.45); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.05); position: relative; overflow: hidden; z-index: 1;">
                 <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #0b68f5, #00ff95);"></div>
                 <header>
